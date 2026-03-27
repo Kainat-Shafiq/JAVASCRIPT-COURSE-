@@ -1,6 +1,9 @@
-// Decleared objects in 2 methods
-// 1. Object literal syntax
+// Decleared objects in 2 methods 
+   // 1. Object literal 2. Object constructor 
 
+// 1. Object literal syntax
+   //*simple our comman mathod hai object bananay ka
+   //*Direct {} ka use kar k object create karty hein
 const mySym = Symbol("key1");
 let person = {
     name: "Kainat",
@@ -35,7 +38,11 @@ person.greeting2 = function() {
 }
 person.greeting2();
 
-// 2. Object constructor syntax
-let person2 = new Object();
-person2.name = "Maryam";
-person2.age = 23;   
+                         // *Symbol* //
+ //symbol aik unique premitive value hai or har symbol unique hota hai chahy discriptionn same ho
+const mySym1 = Symbol("key1");
+const user = {
+    userName: "Sana",
+    userAge:  23 ,
+    [mySym1]: "secret key" ,
+}
