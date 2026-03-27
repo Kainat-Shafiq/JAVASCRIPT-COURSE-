@@ -1,3 +1,5 @@
+
+//Combine arrays:
 const marvelHeros = ["thore" ," ironman" , "sspiderman"];
 const dcHeros = ["superman", "flash" , " badman"];
 marvelHeros.push(dcHeros);
@@ -8,6 +10,7 @@ console.log(marvelHeros[3][1]);
 
 
 //***   next method concat() ***/
+      //Combine (merge) arrays:
 const allHeros = marvelHeros.concat(dcHeros)
 console.log(allHeros);
 
