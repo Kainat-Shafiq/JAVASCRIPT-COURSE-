@@ -1,11 +1,11 @@
 //**********    Check If an Object Has a Property   *******
-const person = {
+const person1 = {
   name: "Alice",
   age: 30
 };
 
-console.log(person.hasOwnProperty("name")); // true
-console.log(person.hasOwnProperty("job")); // false
+console.log(person1.hasOwnProperty("name")); // true
+console.log(person1.hasOwnProperty("job")); // false
 
 const person2 = {
   name: "Alice",
@@ -64,4 +64,20 @@ const person = { name: "Alice", age: 30 };
 const jsonStr = JSON.stringify(person);
 
 console.log(jsonStr); 
-// '{"name":"Alice","age":30}'      
+// '{"name":"Alice","age":30}'
+
+
+//********Object Destructuring******
+//Object destructuring ek shortcut hai JavaScript mein, jisse hum object ke properties ko directly variables mein extract kar sakte hain.
+//Alag se variable banane ke liye baar-baar dot notation use karna nahi padta.
+const person5 = {
+  name: "Kainat",
+  age: 23,
+  city: "Karachi"
+};
+
+// Destructuring
+const { name, age } = person5;
+
+console.log(name); // Kainat
+console.log(age);  // 23
