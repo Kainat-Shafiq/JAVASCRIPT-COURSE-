@@ -67,7 +67,7 @@ console.log(jsonStr);
 // '{"name":"Alice","age":30}'
 
 
-//********Object Destructuring******
+//********Object Destructuring/ object de-structure ******
 //Object destructuring ek shortcut hai JavaScript mein, jisse hum object ke properties ko directly variables mein extract kar sakte hain.
 //Alag se variable banane ke liye baar-baar dot notation use karna nahi padta.
 const person5 = {
@@ -77,7 +77,7 @@ const person5 = {
 };
 
 // Destructuring
-const { name, age } = person5;
+const { name, age } = person5;  // kahn say value extract karni hai(person5 k object say)
 
 console.log(name); // Kainat
 console.log(age);  // 23
