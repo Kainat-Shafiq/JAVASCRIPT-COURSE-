@@ -46,3 +46,44 @@ function demo(){
     // console.log(y);  // y is not defined  
 }
 demo();
+
+
+// ++++++++++++++++++ Nested Scope ++++++++++++++++++
+function one(){
+    const username2 = "kainat";
+
+    function two(){
+        const password2 = "password123";
+        console.log(username2);  //kainat
+    }
+    //console.log(password2);
+    two();
+}
+one();
+
+if (true) {
+    const username = "Kainat";
+    if (username === "Kainat") {
+        const website = " youtube"
+         console.log(username + website);  //
+    }
+    // console.log(website); // error block scope k ander hi access ho sakta hai
+}
+
+
+
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+
+
+console.log(addone(5))
+
+function addone(num){
+    return num + 1
+}
+
+
+// addTwo(5)                             yahn error aye ga kunkay hum phely call  karwa rahy hein
+// const addTwo = function(num){
+//     return num + 2
+// }
