@@ -28,51 +28,43 @@ let login =  userLogin("kainat", "password123")   //isko varable mein store is l
 console.log(login);
 //console.log(userLogin());  // undefined just logged in with password: undefined 
 
-             
-              // *********           function Scope in JS        *******//
-            //   scope means k koi variable kahn tk access ho sakta hai  javascript mein
-            //    *********           Types Scope in JS        *******
-            //     we have four types of scope in jn js
-            //     1-Global     2- function     3- Block     4-local
-// 1-Global (sab jagha access ho sakta hai)
-let stuName = "Asad";
-let age = 17;
-let subject = "Maths";
-function student(){                //is mein hum parameters use nhii krty hain kyunki hum global variable use kr rhy hain
-    // console.log(stuName);
-    //   stuName = "Asad";
-    //   age = 17;
-    //   subject = "Maths";
- return`my student name ${stuName}, his age is ${age},and subject ${subject}`
-
+            // rest parameters in js
+function calculateCartPrice(item1){
+      return item1;
 }
-console.log(student());
+console.log(calculateCartPrice(100));  // 100 aghr mein yahn 2 ya 3 arguments pass karti hun tab b mere pass output 100 he aye ga
 
+ //here we use (...) rest  operator to handle multiple arguments in a function
 
-//2- function scope (sirf function k ander he use hota hai)
-function test(){
-    return a = 10;
-    console.log(a);  
+function calculateCartPrice2(...item1){  // ab yahn maany rest parameter use kiya hai 
+return item1;
 }
-test();
- //console.log(a);  // a is not defined   
-
-//3- Block scope (sirf block k ander use hota hai)
-if(true){
-    let block = "I am block scope";
-    console.log(block);
+console.log(calculateCartPrice2(100, 200, 300));   //ab mere pass yahn array mein output aay ga [100, 200, 300]  rest parameter se hum multiple arguments ko array mein store kar sakte hain
+ 
+//Or
+function calculateCartPrice3(val1,val2,...items){   //ab yahn mere pass output mein val1 or val2 print nhii hogi 
+    return items;
 }
-// console.log(block);  // block is not defined
+console.log(calculateCartPrice3(10,20,100,200,300));  //ab mere pass yahn array mein output aay ga [100, 200, 300]  rest parameter se hum multiple arguments ko array mein store kar sakte hain
 
-//4- local scope = function + Block  (jo b limited ho ander he access ho sakta hai)   
-function demo(){
-    let x = 5;
-    if(true){
-        let y = 10;
-        console.log(x);
-        console.log(y);
-    }       
-    console.log(x);
-    // console.log(y);  // y is not defined  
+  //yahn hum object ko funcction k ander pass karwayen gy
+  const user = {
+    username: "kainat",
+    password: 19945
 }
-demo();
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and password is ${anyobject.password}`);
+}
+handleObject(user);
+
+
+
+// ab hum Array ko function k ander pass karwayen gy
+const numbers = [1, 2, 3, 4, 5];
+function sumArray(getArray){
+    return getArray[1]
+}
+console.log(sumArray(numbers)); 
+
+ 
