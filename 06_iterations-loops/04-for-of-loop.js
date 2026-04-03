@@ -30,9 +30,8 @@ console.log(myMap.get("name"));
      ///confusion
 
   for (const [key, value] of myMap) {   
-     console.log(key, ':-', value);
+     console.log(key, ':', value);
 }
-
 
 
 const myObject = {
@@ -40,11 +39,11 @@ const myObject = {
     game2: 'Spiderman'
 }
 //         for (const [key, value] of myObject) {
-//     console.log(key, ':-', value);
+//     console.log(key, ':', value);
     
 // } yahn error aayega kyunki object iterable nahi hota, isliye hume Object.entries() ka use karna padega
 
 
 for (const [key, value] of Object.entries(myObject)) {
-    console.log(key, ':-', value);
+    console.log(key, ':', value);
 }
