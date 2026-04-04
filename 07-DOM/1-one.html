@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+    <style>
+        .bgcolor {
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+
+    <!-- title.textContent = "DOM Learning with youtube tutorial" returns all text content
+
+    title.innerText = "DOM Learning with youtube tutorial" give the text
+
+    title.innerHTML = "DOM Learning with youtube tutorial <span style='display: none;'>test text</span>" is mein sara text visible hoga aur span wala text bhi visible hoga  -->
+
+    <!-- <div>
+        <h1 id="title" class="heading">DOM Learning with youtube tutorial <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>This is a paragraph.</p>
+
+
+        <ur>
+             <li>one</li>
+             <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ur>
+    </div> -->
+
+    <div class="parent">
+        <div class="child">Day 1:Monday</div>
+        <div class="child">Day 2:Tuesday</div>
+        <div class="child">Day 3:Wednesday</div>
+        <div class="child">Day 4:Thursday</div>
+    </div>     
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);   // HTMLCollection(4) [div.child, div.child, div.child, div.child]
+    // console.log(parent.children[1].innerHTML);
+     
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     const element = parent.children[i];
+    //     console.log(element.innerHTML);
+    // }
+    // parent.children[2].style.color = "red";
+    // parent.children[2].style.fontSize = "20px";
+
+    //        //parent to child 
+    // console.log(parent.firstElementChild);   
+    // console.log(parent.lastElementChild);
+
+          //child to parent
+    const dayOne = document.querySelector('.child');
+    console.log(dayOne);          // yahn mere pass day one ka element a gaya hai
+    console.log(dayOne.parentElement);   // yahn mere pass parent element a gaya hai
+    console.log(dayOne.nextElementSibling); // monday ka subling tuesday
+    
+    // yahn 4 nodes hai lakin osky sath line bread b as a node count hogi is liye 9 a raha hai
+    console.log("NODES: ",parent.childNodes);
+    
+    
+</script>
+</html>
