@@ -1,0 +1,59 @@
+     
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+   <body style="background-color: black; color: thistle;">
+       <div id="parent">
+        <div class="child">Day 1:Apple</div>
+        <div class="child">Day 2:Mango</div>
+        <div class="child">Day 3:Orange</div>
+        <div class="child">Day 4:Strawberry</div>
+    </div> 
+    
+   </body>
+   <script>
+             // how to create New Element in DOM
+     //1. createElement() method
+           // let newElement = document.createElement("p");
+     //2. createTexContext() method
+           // newElement.textContent = "This is a new paragraph.";
+     //3. appendChild() method
+        // document.body.appendChild(newElement);
+     //4- kisi specific element mein add karna
+      //     html <div id ="container"></div> 
+          //javascript
+         //let div = document.getElementById("container");
+        //let newpara =document.createElement("p");
+        //newpara.textContent = "This is a new paragraph.";
+        //div.appendChild(newpara);
+
+
+      //  //add new element in DOM
+      //  const div= document.getElementById("container");  
+      //  newPara = document.createElement("p");
+      //  //add text to the new element
+      //  newPara.textContent ="Inside the div container paragraph";
+      // // show the element in page
+      //  did.appendChild(newPara);
+
+
+       const newDiv = document.createElement("div");
+       console.log(newDiv);   // <div></div>
+       newDiv.className = "main"
+       newDiv.id = "myId";
+       newDiv.id = Math.round(Math.random()* 10 + 1)
+       newDiv.setAttribute("title", "This is a new div element");
+       newDiv.style.backgroundColor = "blue";
+       newDiv.padding = "10px";
+      //  newDiv.innerText = "adding new div inner text"; yeh overwrite karta hai
+       const addTexr = document.createTextNode("adding new div inner text");
+       newDiv.appendChild(addText);
+       document.body.appendChild(newDiv);
+
+
+   </script>
+   </html>     
