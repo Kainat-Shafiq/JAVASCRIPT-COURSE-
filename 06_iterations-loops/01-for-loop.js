@@ -4,8 +4,9 @@
 // 1-for loop
 // 2-while loop
 // 3-do while loop
-// 4-for...in loop
-// 5-for...of loop  
+// 4-for...of loop
+// 5-for...in loop  
+// 6-foreach loop (arrays specific loop)
 
                                   // 1-for loop
                         // jab humy pata ho kitni dafa code ko repaet karana hai.          
