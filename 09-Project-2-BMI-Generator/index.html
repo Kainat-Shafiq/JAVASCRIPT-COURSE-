@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css" />
+
+    <title>BMI Calculator</title>
+</head>
+<body style="background:rgba(212, 198, 198, 0.607) ;color: #000000">
+    <nav>
+      <a href="https://github.com/Kainat-Shafiq/JAVASCRIPT-COURSE-/tree/main/08-Project-1-color-changer" aria-current="page">Home</a>
+      <a target="_blank" href="https://github.com/Kainat-Shafiq/JAVASCRIPT-COURSE-"
+        >MY Github Account</a
+      >
+    </nav>
+    <div class="container">
+        <h2>Kainat Second Project</h2>
+        <h1>BMI Calculator</h1>
+     <form >
+         <p>
+            <label>Height in cm:</label>    <!--label description provide karta hai k kis field mein kya enter krna hai -->
+            <input type="text" id="height" >
+         </p>
+         <p>
+            <label>Weight in kg:</label>    <!--label description provide karta hai k kis field mein kya enter krna hai -->
+            <input type="text" id="weight" >
+         </p>
+
+         <button type = "submit">Calculate</button>
+         <div id = "results"></div>
+         <div id="weight-guide">
+            <h3>BMI Weight Guide</h3>
+            <p>under weight = less than 18.6</p>
+            <p>normal range = 18.6 and 24.9</p>
+            <p>over weight = greater than 24.9</p>
+         </div>
+      </form>
+    </div>
+
+</body>
+<script src="code.js"></script>
+</html>

@@ -1,0 +1,80 @@
+
+/* .container {
+  width: 575px;
+  height: 825px;
+
+  background-color: #c4c450;
+  padding-left: 30px;
+} */
+ .container {
+  width: 575px;
+  margin: 50px auto;   /* center */
+  background-color: #c4c450;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+form {
+  text-align: center;
+}
+h1{
+    text-align: center; 
+}
+nav {
+  display: flex;
+  /* center horizontally */
+  gap: 20px;                /* links ke darmiyan space */
+  margin-top: 20px;
+}
+h2 {
+  text-align: center;   /* center karne ke liye */
+  font-size: 20px;      /* size chota karne ke liye */
+  margin-top: 10px;     /* thora spacing ke liye */
+}
+#height,
+#weight {
+  width: 150px;
+  height: 25px;
+  margin-top: 30px;
+}
+
+#weight-guide {
+  margin-left: 75px;
+  margin-top: 25px;
+}
+
+#results {
+  font-size: 35px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: rgb(241, 241, 241);
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin-left: 90px;
+  margin-top: 25px;
+  background-color: #fff;
+  /* padding: 1px 30px; */
+  border-radius: 8px;
+  color: #212121;
+  /* text-decoration:none; */
+  border: 2px solid #212121;
+  justify-content: center;
+   align-items: center;
+  font-size: 25px;
+  padding: 0;
+}
+
+h1 {
+  padding-left: 15px;
+  padding-top: 25px;
+  
+}
