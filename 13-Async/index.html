@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async in JavaScript</h1>
+    <button id ="stop">Stop</button>
+    <button id = "start">Start</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("kainat ");   
+    // },200)       yeh kaam hum aesy b kar sakty hein method 2:
+    const sayDate = (function(){
+        console.log("kainat ",Date.now());   
+    })
+      setInterval(sayDate,1000)  // yahn hum ny say date ka reference pass kiya hai
+      const intervalId = setInterval(sayDate,1000)
+      clearInterval(intervalId)
+</script>
+</html>
