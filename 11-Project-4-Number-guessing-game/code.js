@@ -20,7 +20,6 @@ if(playGame){
      validateGuess(guess);
    })
 }
-
   
 function validateGuess(guess){
  // yeh method is liye banaya k yeh user k input ko check kary ga k wo valid hai ya nhii etc wo koi string pass toh nhii kar raha
